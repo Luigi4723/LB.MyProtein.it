@@ -1,0 +1,205 @@
+
+.header .logo {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700; /* Extra Bold */
+    font-style: italic;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    box-sizing: border-box;
+    max-width: 100%;
+    overflow-x: hidden;
+    
+}
+header{
+    position: fixed;
+    top: 0;
+}
+
+/* Stile dell'header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(235, 225, 213);
+    padding: 15px 30px;
+    color: rgb(21, 64, 67);
+    flex-wrap: wrap;
+    width: 100vw;
+}
+
+.logo{
+    padding: 10px;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Spazio tra gli elementi */
+    margin-right: 100px; /* Distanza dal margine destro */
+    flex-wrap: wrap;    
+}
+
+.search-bar {
+    width: 400px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.login {
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.cart {
+    font-size: 18px;
+    text-decoration: none;
+}
+
+/* Stile della navbar */
+.navbar {
+    background-color: rgb(21, 64, 67);
+    padding: 5px 0;
+    text-align: center;
+    width: 100vw;
+  
+  
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+/* Stile dei link */
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding: 9px 20px;
+    transition: 0.3s;
+}
+
+/* Effetto hover */
+.navbar ul li a:hover {
+    background-color: rgb(235, 225, 213);
+    color: rgb(21, 64, 67);
+}
+.image-conteiner{
+    width: 100%;
+    padding: 100px 0px 0px 0px;
+    overflow: hidden;
+    
+}
+.custom-image { 
+    width: 100vw;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+}
+
+.products {
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    
+}
+
+.product {
+    background: #f4f4f4;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 250px;
+}
+
+.product img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+button {
+    background: rgb(21, 64, 67);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: rgb(30, 105, 110);
+}
+
+footer {
+    background-color: #222;
+    color: white;
+    
+    text-align: center;
+    width: 100vw;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.footer-section {
+    max-width: 250px;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+}
+
+.footer-section ul li a {
+    color: #bbb;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    color: white;
+}
+
+.social-icons i {
+    font-family: helvetica;
+    color: #bbb;
+    text-decoration: none;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.social-icons i:hover {
+    color: white;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #aaa;
+}
+

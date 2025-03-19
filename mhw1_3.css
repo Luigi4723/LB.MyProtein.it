@@ -42,10 +42,16 @@ header{
     margin-right: 100px; /* Distanza dal margine destro */
     flex-wrap: wrap;    
 }
-
+.search-block .search {
+    position: relative;
+    top: 5px;
+    left: 35px; /* Posiziona l'icona a sinistra */
+    color: rgb(21, 64, 67);
+    font-size: 16px;
+}
 .search-bar {
     width: 400px;
-    padding: 5px;
+    padding: 10px 40px;
     border: none;
     border-radius: 5px;
     font-size: 20px;
@@ -202,4 +208,86 @@ footer {
     font-size: 14px;
     color: #aaa;
 }
+/* Media queries per dispositivi mobili */
+
+/* Piccoli schermi (max-width 600px) */
+@media screen and (max-width: 600px) {
+    
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        position: relative;
+    }
+
+    .navbar {
+        margin-top: 0;
+        position: relative;
+        align-items: center;
+    }
+
+    .logo {
+        width: 100px; /* Logo più piccolo per schermi piccoli */
+    }
+
+    .header-right {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .search-bar {
+        width: 100%; /* Barra di ricerca a piena larghezza */
+        margin-bottom: 10px;
+    }
+
+    button {
+        width: 100%; /* Bottoni a piena larghezza */
+        margin-top: 10px;
+    }
+
+    .cart-button {
+        width: 100%; /* Carrello su una nuova linea */
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .cart-button svg {
+        margin-right: 0; /* Rimuove il margine tra icona e testo */
+    }
+}
+
+/* Media queries per tablet (max-width 768px) */
+@media screen and (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        
+    }
+    .navbar {
+        margin-top: 0;
+        
+    }
+
+    .logo {
+        width: 300px; /* Logo ridotto per tablet */
+        
+    }
+
+    .search-bar {
+        width: 60%; /* Barra di ricerca più larga su tablet */
+        margin-right: 0;
+    }
+
+    .header-right {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .cart-button {
+        margin-top: 15px;
+        text-align: center;
+    }
+}
+
 

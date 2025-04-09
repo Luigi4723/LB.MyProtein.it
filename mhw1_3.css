@@ -18,6 +18,8 @@ body {
 header{
     position: fixed;
     top: 0;
+    z-index: 1000; /* Assicura che l'header sia sopra gli altri elementi */
+
 }
 
 /* Stile dell'header */
@@ -91,27 +93,62 @@ header{
     display: none;
     position: absolute;
     background-color: white;
-    min-width: 50px;
+    min-width: 200px;
+    max-width: 90vw; /* Limita la larghezza su schermi piccoli */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     border: 1px solid #ddd;
     z-index: 1;
     top: 100%;
+    right: 0;
+    padding: 15px;
+    border-radius: 6px;
+    overflow-wrap: break-word;
+
+    
 }
 .dropmenu:hover .login-content {
     display: block;
 }
 .login-content a {
     border-bottom: 1px solid black;
-    color: black;
-    padding: 5px 10px;
-    text-decoration: none;
-    display: block;
-    background-color: white;
+        color: rgb(21, 64, 67);
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        background-color: white;
+        font-weight: bold;
 }
 
 /* Effetto hover */
 .login-content a:hover {
     background-color: #f1f1f1;
+    text-decoration: underline;
+}
+
+/* Sezione login/registrati */
+.auth-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    padding: 15px;
+}
+
+.auth-section a {
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+    background-color: rgb(21, 64, 67);
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.auth-section button:hover {
+    background-color: rgb(34, 118, 124);
 }
 
 /* Stile della navbar */
@@ -152,8 +189,9 @@ header{
 }
 .image-conteiner{
     width: 100%;
-    padding: 100px 0px 0px 0px;
+    padding: 100px 0px 0px 0px; /* Spazio sopra l'immagine */
     overflow: hidden;
+    position: relative; /* Chiave per contenere le frecce */
     
 }
 .custom-image { 
@@ -162,7 +200,29 @@ header{
     display: block;
     object-fit: cover;
     object-position: center;
+    transition: opacity 0.5s ease;
 }
+
+/* Frecce */
+/* Fisso le frecce all'interno della container */
+.image-conteiner .arrow-btn {
+    position: absolute;
+    top: 50%;
+    font-size: 2rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.3); /* Semi-trasparente */
+    cursor: pointer;
+    border: none;
+  }
+  
+  .image-conteiner .arrow-btn.left {
+    left: 10px;
+  }
+  
+  .image-conteiner .arrow-btn.right {
+    right: 10px;
+  }
+
 
 .products {
     display: flex;
@@ -202,7 +262,7 @@ header{
     border-radius: 5px;
 }
 .product button:hover {
-    background-color: rgb(34, 118, 124);;
+    background-color: rgb(34, 118, 124);
     color: white;
 }
 footer {
@@ -311,16 +371,18 @@ footer {
     
     .menu-content a {
         border-bottom: 1px solid black;
-        color: black;
+        color: rgb(21, 64, 67);
         padding: 12px 16px;
         text-decoration: none;
         display: block;
         background-color: white;
+        font-weight: bold;
     }
     
     /* Effetto hover */
     .menu-content a:hover {
         background-color: #f1f1f1;
+        text-decoration: underline;
     }
     
     .header-right{

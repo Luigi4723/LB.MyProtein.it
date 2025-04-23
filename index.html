@@ -162,7 +162,47 @@
         </div>
 
     </section>
+
+    <div class="chatbot-container">
+        <div class="chat"> 
+            <h6>Hai bisohno di aiuto?</h6>
+            <div class="robot-icon">🤖 </div>
+        </div>
+        
+        <div class="chatbot-box">
+          <h3>Chatbot Assistenza</h3>
+          <div id="chatBox"></div>
+          <input type="text" id="userInput" placeholder="Scrivi qualcosa..." />
+          <button id="sendBtn">Invia</button>
+        </div>
+    </div>
     
+ <!-- Overlay per effetto popup -->
+ <div class="overlay" id="overlay"></div>
+
+ <!-- Contenitore popup -->
+ <div class="newsletter-wrapper" id="newsletterBox">
+   <button class="close-btn" id="closeNewsletter">×</button>
+
+   <div class="promo-box">
+        <img src="immagini/start/news.png" alt="news">
+   </div>
+
+   <form id="newsletterForm" class="form-box">
+     <h2>Crea un account e<br>iscriviti alla newsletter per:</h2>
+     <ul>
+       <li>✅ 5% Extra su Tutto sul primo ordine</li>
+       <li>✅ Avere sempre anche il 10% extra su App</li>
+       <li>✅ Accesso anticipato a nuovi prodotti e offerte</li>
+     </ul>
+     
+     <input id="emailInput" type="email" placeholder="Indirizzo e-mail *">
+     <button type="submit" class="btn-submit">Iscriviti</button>
+     <div id="newsletterResponse" class="response"></div>
+   </form>
+ </div>
+      
+      
     <footer>
         <div class="footer-container">
             <div class="footer-section">

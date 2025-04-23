@@ -264,7 +264,197 @@ header{
 .product button:hover {
     background-color: rgb(34, 118, 124);
     color: white;
+    display: none;
 }
+
+/* chatbot AI*/
+.chatbot-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    text-align: right;
+    z-index: 1000;
+}
+
+.chatbot-container h6{
+    margin: 0;
+    padding: 5px;
+    background-color: #ccc;
+    border-radius: 5px;
+}
+
+.robot-icon {
+    font-size: 40px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+  
+.robot-icon:hover {
+    transform: scale(1.1);
+}
+  
+.chatbot-container:hover .chat {
+    opacity: 0;
+    pointer-events: none; 
+}
+
+.chatbot-box {
+    display: none;
+    background: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+    width: 300px;
+    margin-top: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.3s ease;
+    text-align: center;
+}
+  
+.chatbot-container:hover .chatbot-box {
+    display: block;
+}
+  
+#chatBox {
+    height: 200px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    padding: 10px;
+    background: #f9f9f9;
+    margin-bottom: 10px;
+}
+  
+#chatBox p {
+    margin: 5px 0;
+}
+  
+#userInput {
+    width: 75%;
+    padding: 8px;
+    font-size: 1em;
+}
+  
+#sendBtn {
+padding: 8px;
+background-color: #007bff;
+color: white;
+border: none;
+cursor: pointer;
+border-radius: 4px;
+}
+ 
+
+/* Overlay grigio trasparente */
+.overlay {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    z-index: 100;
+    display: none;
+}
+
+/* Contenitore newsletter popup */
+.newsletter-wrapper {
+position: fixed;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+display: none;
+flex-direction: row;
+background: white;
+box-shadow: 0 0 20px rgba(0,0,0,0.2);
+border-radius: 12px;
+overflow: hidden;
+max-width: 800px;
+width: 90%;
+z-index: 101;
+}
+
+/* mostra quando ha classe .show */
+.overlay.show {
+display: block;
+}
+.newsletter-wrapper.show {
+display: flex;
+}
+
+.promo-box {
+    flex: 1;
+    background-color: #f5f0ec;
+    padding: 10px;
+    align-items: center;
+    padding-top: 5%;
+}
+.promo-box img{
+    width: 100%;
+    height: auto;
+}
+
+.form-box {
+flex: 1;
+padding: 30px;
+position: relative;
+}
+
+.form-box h2 {
+font-size: 18px;
+margin-bottom: 15px;
+line-height: 1.4;
+}
+
+.form-box ul {
+padding-left: 20px;
+margin-bottom: 20px;
+}
+
+.form-box li {
+margin-bottom: 10px;
+font-size: 14px;
+}
+
+.form-box input[type="email"] {
+align-items: center;
+width: 90%;
+padding: 12px;
+margin-bottom: 15px;
+border-radius: 6px;
+border: 1px solid #ccc;
+}
+
+.btn-submit {
+background-color: #1e1e1e;
+color: white;
+padding: 12px;
+width: 100%;
+border: none;
+border-radius: 6px;
+font-weight: bold;
+cursor: pointer;
+}
+
+.response {
+margin-top: 10px;
+font-size: 14px;
+}
+
+/* Bottone X per chiudere */
+.close-btn {
+position: absolute;
+top: 10px;
+left: 10px;
+font-size: 24px;
+background: none;
+border: none;
+cursor: pointer;
+color: #888;
+z-index: 102;
+}
+
+
+
+
 footer {
     background-color: #222;
     color: white;

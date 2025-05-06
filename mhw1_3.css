@@ -121,7 +121,7 @@ header{
 
 /* Effetto hover */
 .login-content a:hover {
-    background-color: #f1f1f1;
+    background-color: #f1f1f1 ;
     text-decoration: underline;
 }
 
@@ -147,24 +147,22 @@ header{
     transition: background-color 0.3s;
 }
 
-.auth-section button:hover {
+.auth-section a:hover {
     background-color: rgb(34, 118, 124);
 }
 
 /* Stile della navbar */
 .navbar {
     background-color: rgb(21, 64, 67);
-    padding: 5px 0;
     text-align: center;
     width: 100vw;
   
   
 }
 
-.navbar ul {
+.navbar {
     list-style: none;
-    padding: 0;
-    margin: 0;
+    margin: 0px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -174,16 +172,16 @@ header{
 }
 
 /* Stile dei link */
-.navbar ul li a {
+.navbar a {
     text-decoration: none;
     color: white;
-    font-size: 16px;
-    padding: 9px 20px;
+    font-size: 20px;
+    padding: 10px 20px;
     transition: 0.3s;
 }
 
 /* Effetto hover */
-.navbar ul li a:hover {
+.navbar a:hover {
     background-color: rgb(235, 225, 213);
     color: rgb(21, 64, 67);
 }
@@ -223,237 +221,141 @@ header{
     right: 10px;
   }
 
-
+/*
+.products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100vw;
+    padding: 20px;
+    margin: 0 auto;
+}
+.product {
+    align-items: center;
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    border: 1px solid #ddd;
+    justify-content: space-between; 
+}*/
 .products {
     display: flex;
     justify-content: space-around;
     width: 100vw;
     flex-wrap: wrap;
-    padding-top: 20px;
-    
+    padding-top: 20px;  
 }
-
 .product {
     background: #f4f4f4;
-    margin: 10px;
+    margin: 5px;
     padding: 20px;
     border-radius: 8px;
-    text-align: center;
     width: 250px;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: space-between; /* Distribuisce lo spazio */
     border: 1px solid #ddd;
 }
 
-
 .product img {
     max-width: 100%;
     border-radius: 8px;
+}
+.product h2 {
+    height: 100%;
+}
+.product p{
+    font-size: 20px;
+    margin-bottom: 0%;
+}
+.product .price{
+    text-align: left;
 }
 .product button {
     background-color: rgb(21, 64, 67);
     color: white;
     border: none;
     padding: 10px 20px;
-    margin-top: 10px;
     cursor: pointer;
     border-radius: 5px;
+    width: 100%;
+    font-size: 20px;
+    
 }
 .product button:hover {
     background-color: rgb(34, 118, 124);
     color: white;
-    display: none;
 }
 
-/* chatbot AI*/
-.chatbot-container {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    text-align: right;
-    z-index: 1000;
-}
 
-.chatbot-container h6{
-    margin: 0;
-    padding: 5px;
-    background-color: #ccc;
-    border-radius: 5px;
-}
-
-.robot-icon {
-    font-size: 40px;
-    cursor: pointer;
-    transition: transform 0.2s;
-}
-  
-.robot-icon:hover {
-    transform: scale(1.1);
-}
-  
-.chatbot-container:hover .chat {
-    opacity: 0;
-    pointer-events: none; 
-}
-
-.chatbot-box {
-    display: none;
-    background: #ffffff;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    padding: 15px;
-    width: 300px;
-    margin-top: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    animation: fadeIn 0.3s ease;
+.api-section {
+    padding: 40px;
     text-align: center;
-}
+    background-color: rgb(235, 225, 213);
+    border-top: 1px solid #d2d2d7;
+    margin-top: 40px;
+    border-radius: 12px;
+  }
   
-.chatbot-container:hover .chatbot-box {
-    display: block;
-}
+  .news-list {
+    list-style: none;
+    padding: 0;
+    max-width: 700px;
+    margin: 0 auto;
+  }
   
-#chatBox {
-    height: 200px;
-    overflow-y: auto;
-    border: 1px solid #ddd;
+  .news-list  {
+    background: #ffffff;
+    margin-bottom: 15px;
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    text-align: left;
+  }
+  
+  .news-list a {
+    color: #0070c9;
+    font-weight: 600;
+    font-size: 1rem;
+    text-decoration: none;
+  }
+  
+  .news-list a:hover {
+    text-decoration: underline;
+  }
+  
+  .news-list p {
+    font-size: 0.85rem;
+    color: #555;
+    margin-top: 6px;
+  }
+.convert-area{
     padding: 10px;
-    background: #f9f9f9;
-    margin-bottom: 10px;
 }
-  
-#chatBox p {
-    margin: 5px 0;
-}
-  
-#userInput {
-    width: 75%;
+  select {
     padding: 8px;
-    font-size: 1em;
-}
+    border-radius: 6px;
+    margin-right: 10px;
+  }
+  label {
+    margin-right: 5px;
+  }
   
-#sendBtn {
-padding: 8px;
-background-color: #007bff;
-color: white;
-border: none;
-cursor: pointer;
-border-radius: 4px;
-}
- 
-
-/* Overlay grigio trasparente */
-.overlay {
-    position: fixed;
-    top: 0; left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.4);
-    z-index: 100;
-    display: none;
-}
-
-/* Contenitore newsletter popup */
-.newsletter-wrapper {
-position: fixed;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
-display: none;
-flex-direction: row;
-background: white;
-box-shadow: 0 0 20px rgba(0,0,0,0.2);
-border-radius: 12px;
-overflow: hidden;
-max-width: 800px;
-width: 90%;
-z-index: 101;
-}
-
-/* mostra quando ha classe .show */
-.overlay.show {
-display: block;
-}
-.newsletter-wrapper.show {
-display: flex;
-}
-
-.promo-box {
-    flex: 1;
-    background-color: #f5f0ec;
-    padding: 10px;
-    align-items: center;
-    padding-top: 5%;
-}
-.promo-box img{
-    width: 100%;
-    height: auto;
-}
-
-.form-box {
-flex: 1;
-padding: 30px;
-position: relative;
-}
-
-.form-box h2 {
-font-size: 18px;
-margin-bottom: 15px;
-line-height: 1.4;
-}
-
-.form-box ul {
-padding-left: 20px;
-margin-bottom: 20px;
-}
-
-.form-box li {
-margin-bottom: 10px;
-font-size: 14px;
-}
-
-.form-box input[type="email"] {
-align-items: center;
-width: 90%;
-padding: 12px;
-margin-bottom: 15px;
-border-radius: 6px;
-border: 1px solid #ccc;
-}
-
-.btn-submit {
-background-color: #1e1e1e;
-color: white;
-padding: 12px;
-width: 100%;
-border: none;
-border-radius: 6px;
-font-weight: bold;
-cursor: pointer;
-}
-
-.response {
-margin-top: 10px;
-font-size: 14px;
-}
-
-/* Bottone X per chiudere */
-.close-btn {
-position: absolute;
-top: 10px;
-left: 10px;
-font-size: 24px;
-background: none;
-border: none;
-cursor: pointer;
-color: #888;
-z-index: 102;
-}
-
-
-
+  .convert-area button {
+    padding: 10px 20px;
+    background-color:  rgb(21, 64, 67);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .convert-area button:hover {
+    background-color: rgb(34, 118, 124);
+  }
 
 footer {
     background-color: #222;
@@ -639,7 +541,7 @@ footer {
         padding: 5px;
        
     }
-    .product h2{
+    .product h2, p{
         font-size: 80%;
         padding: 2px;
         margin: 5px;

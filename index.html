@@ -66,15 +66,13 @@
 
         <!-- Navbar con categorie prodotti -->
         <nav class="navbar">
-        <ul>
-            <li class="nav-item" ><a href="#">Proteine</a></li>
-            <li class="nav-item" ><a href="#">Nutrizione</a></li>
-            <li class="nav-item" ><a href="#">Activewear</a></li>
-            <li class="nav-item" ><a href="#">Snack & Drink</a></li>
-            <li class="nav-item" ><a href="#">Alimentazione Vegana</a></li>
-            <li class="nav-item" ><a href="#">Performance</a></li>
-            <li class="nav-item" ><a href="#">Perdita di Peso</a></li>
-        </ul>
+            <a href="#">Proteine</a>
+            <a href="#">Nutrizione</a>
+            <a href="#">Activewear</a>
+            <a href="#">Snack & Drink</a>
+            <a href="#">Alimentazione Vegana</a>
+            <a href="#">Performance</a>
+            <a href="#">Perdita di Peso</a>
         </nav> 
     </header>
     
@@ -88,121 +86,115 @@
         <div class="product">
             <img src="immagini/proteine/impact_whey_protein.jpg" alt="IMPACT WHEY PROTEIN">
             <h2>IMPACT WHEY PROTEIN</h2>
-            <button>Acquista </button>
+            <p class="price" data-eur="24.99">€24.99</p>
+            <button>Acquista</button>
         </div>
         <div class="product">
             <img src="immagini/proteine/impact_whey_isolate.jpg" alt="IMPACT WHEY ISOLATE">
             <h2>IMPACT WHEY ISOLATE</h2>
+            <p class="price" data-eur="29.99">€29.99</p>
             <button>Acquista</button>
         </div>
         <div class="product">
             <img src="immagini/proteine/vegan_protein.jpg" alt="VEGAN PROTEIN">
             <h2>VEGAN PROTEIN</h2>
+            <p class="price" data-eur="26.99">€26.99</p>
             <button>Acquista</button>
         </div>
         <div class="product">
             <img src="immagini/integrazione/creatina.jpg" alt="CREATINA MONOIDRATO">
             <h2>CREATINA MONOIDRATO</h2>
+            <p class="price" data-eur="19.99">€19.99</p>
             <button>Acquista</button>
         </div>
         <div class="product">
             <img src="immagini/integrazione/multivitaminico.jpg" alt="MULTIVITAMINICO">
             <h2>MULTIVITAMINICO Whey</h2>
+            <p class="price" data-eur="15.99">€15.99</p>
             <button>Acquista</button>
         </div>
         <div class="product">
             <img src="immagini/integrazione/omega3.jpg" alt="OMEGA-3">
             <h2>OMEGA-3</h2>
+            <p class="price" data-eur="9.99">€9.99</p>
             <button>Acquista</button>
         </div>
          <div class="product">
             <img src="immagini/active-wear/t-shirt_men.jpg" alt="T-SHIRT SPORTIVA">
             <h2>T-SHIRT SPORTIVA</h2>
+            <p class="price" data-eur="23.99">€23.99</p>
             <button>Acquista</button>
         </div>
          <div class="product">
             <img src="immagini/active-wear/canotta_men.jpg" alt="CANOTTA SPORTIVA MEN">
             <h2>CANOTTA SPORTIVA MEN</h2>
+            <p class="price" data-eur="19.99">€19.99</p>
             <button>Acquista</button>
         </div>
         <div class="product">
             <img src="immagini/active-wear/shorts_men.jpg" alt="PANTALONCINI SPORTIVI">
             <h2>PANTALONCINI SPORTIVI</h2>
+            <p class="price" data-eur="29.99">€29.99</p>
             <button>Acquista</button>
         </div>
         <div class="product">
             <img src="immagini/snak/protein_bar.jpg" alt="BARRETTA PROTEICA">
             <h2>BARRETTA PROTEICA</h2>
+            <p class="price" data-eur="16.99">€16.99</p>
             <button>Acquista</button>
         </div>
         <div class="product">
             <img src="immagini/snak/protein_brownie.jpg" alt="BROWNIE PROTEICO">
             <h2>BROWNIE PROTEICO</h2>
+            <p class="price" data-eur="16.99">€16.99</p>
             <button>Acquista</button>
         </div>
         <div class="product">
             <img src="immagini/snak/protein_cookie.jpg" alt="COOKIE PROTEICO">
             <h2>COOKIE PROTEICO</h2>
+            <p class="price" data-eur="28.99">€28.99</p>
             <button>Acquista</button>
         </div>
         <div class="product">
             <img src="immagini/performance/pre_wo.jpg" alt="MISCELA PRE-WORKOUT">
             <h2>MISCELA PRE-WORKOUT</h2>
+            <p class="price" data-eur="20.99">€20.99</p>
             <button>Acquista</button>
         </div>
         <div class="product">
             <img src="immagini/performance/bcaa.jpg" alt="BCAA ESSENZIALI">
             <h2>BCAA ESSENZIALI</h2>
+            <p class="price" data-eur="9.99">€9.99</p>
             <button>Acquista</button>
         </div>
         <div class="product">
             <img src="immagini/performance/energy_gel.jpg" alt="ENERGY GEL">
             <h2>ENERGY GEL</h2>
+            <p class="price" data-eur="22.99">€22.99</p>
             <button>Acquista</button>
         </div>
 
     </section>
+    
+    <section class="api-section">
+        <h2>Ultime notizie sul Fitness</h2>
+        <div id="news-list" class="news-list">
+            <p>Caricamento notizie…</p>
+        </div>
+    </section>
 
-    <div class="chatbot-container">
-        <div class="chat"> 
-            <h6>Hai bisohno di aiuto?</h6>
-            <div class="robot-icon">🤖 </div>
-        </div>
-        
-        <div class="chatbot-box">
-          <h3>Chatbot Assistenza</h3>
-          <div id="chatBox"></div>
-          <input type="text" id="userInput" placeholder="Scrivi qualcosa..." />
-          <button id="sendBtn">Invia</button>
-        </div>
+    <div class="convert-area">
+        <label for="currency">Scegli valuta:</label>
+        <select id="currency">
+            <option value="USD">USD</option>
+            <option value="GBP">GBP</option>
+            <option value="JPY">JPY</option>
+            <option value="CHF">CHF</option>
+        </select>
+        <button id="convert-btn">Converti</button>
     </div>
     
- <!-- Overlay per effetto popup -->
- <div class="overlay" id="overlay"></div>
-
- <!-- Contenitore popup -->
- <div class="newsletter-wrapper" id="newsletterBox">
-   <button class="close-btn" id="closeNewsletter">×</button>
-
-   <div class="promo-box">
-        <img src="immagini/start/news.png" alt="news">
-   </div>
-
-   <form id="newsletterForm" class="form-box">
-     <h2>Crea un account e<br>iscriviti alla newsletter per:</h2>
-     <ul>
-       <li>✅ 5% Extra su Tutto sul primo ordine</li>
-       <li>✅ Avere sempre anche il 10% extra su App</li>
-       <li>✅ Accesso anticipato a nuovi prodotti e offerte</li>
-     </ul>
-     
-     <input id="emailInput" type="email" placeholder="Indirizzo e-mail *">
-     <button type="submit" class="btn-submit">Iscriviti</button>
-     <div id="newsletterResponse" class="response"></div>
-   </form>
- </div>
-      
-      
+    
     <footer>
         <div class="footer-container">
             <div class="footer-section">

@@ -18,7 +18,7 @@
             
             <div class="header-right">
                 <div class="menu">
-                    <button class="menu-button">
+                   <!-- <button class="menu-button">
                         <svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
                     </button>
                     <div class="menu-content">
@@ -29,8 +29,119 @@
                             <a href="#">Alimentazione Vegana</a>
                             <a href="#">Performance</a>
                             <a href="#">Perdita Di Peso</a>
-                    </div>
+                    </div>-->
+                
+                <button class="hamburger" id="hamburger" onclick="toggleMenu()">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960""><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+                    </button>
+                
+
+                <!-- Menu mobile con sottocategorie -->
+                <div class="mobile-menu" id="mobileMenu">
+                <div class="close-btn" onclick="toggleMenu()">✕</div>
+                <a class="title" href="#" onclick="toggleSubmenu('proteineSub')">Proteine</a>
+                <div class="submenu" id="proteineSub">
+                    <a href="#">Whey Protein</a>
+                    <a href="#">Proteine Isolate</a>
+                    <a href="#">Proteine Vegane</a>
                 </div>
+
+                <a class="title" href="#" onclick="toggleSubmenu('nutrizioneSub')">Nutrizione</a>
+                <div class="submenu" id="nutrizioneSub">
+                    <a href="#">BCAA</a>
+                    <a href="#">EAA</a>
+                    <a href="#">Omega 3</a>
+                    <a href="#"><L-carnitina></a>
+                </div>
+
+                <a class="title" href="#" onclick="toggleSubmenu('nutrizioneSub')">Vitamine</a>
+                <div class="submenu" id="nutrizioneSub">
+                    <a href="#">Amminoacidi</a>
+                    <a href="#">Pre-workout</a>
+                    <a href="#">Post-workout</a>
+                    <a href="#">Intra-workout</a>
+                    <a href="#">Omega 3</a>
+                    <a href="#">Creatina</a>
+                    
+                </div>
+
+                <a class="title" href="#" onclick="toggleSubmenu('activewearSub')">Activewear</a>
+                <div class="submenu" id="activewearSub">
+                    <a class="title" href="#">Uomo</a>
+                    <a href="#">Giacche</a>
+                    <a href="#">Felpe</a>
+                    <a href="#">T-shirt</a>
+                    <a href="#">Canotte</a>
+                    <a href="#">Pantaloncini</a>
+                    <a href="#">Tute</a>
+
+                    <a class="title" href="#">Donna</a>
+                    <a href="#">Giacche</a>
+                    <a href="#">Felpe</a>
+                    <a href="#">T-shirt</a>
+                    <a href="#">Canotte</a>
+                    <a href="#">Reggiseni sportivi</a>
+                    <a href="#">Joggers</a>
+                    <a href="#">Leggins</a>
+                    <a href="#">Pantaloncini</a>
+                    <a href="#">Tute</a>
+                </div>
+
+                <a class="title" href="#" onclick="toggleSubmenu('nutrizioneSub')">Snack & Drink</a>
+                <div class="submenu" id="nutrizioneSub">
+                    <a class="title" href="#">Snack</a>
+                    <a href="#">Barrette proteiche</a>
+                    <a href="#">Cookies proteici</a>
+                    <a href="#">Brownie proteici</a>
+
+                    <a class="title" href="#">Drink</a>
+                    <a href="#">Bevanda proteica</a>
+                    <a href="#">Energy drink</a>
+
+                    
+                </div>
+
+                <a class="title" href="#" onclick="toggleSubmenu('nutrizioneSub')">Alimentazione vegana</a>
+                <div class="submenu" id="nutrizioneSub">
+                    <a class="title" href="#">Snack vegani</a>
+                    <a href="#">Barrette proteiche vegane</a>
+                    <a href="#">Cookies proteici vegani</a>
+                    <a href="#">Brownie proteici vegani</a>
+
+                    <a class="title" href="#">Proteine vegane</a>
+                    <a href="#">Proteine vegane</a>
+                    <a href="#">Vegan Clear Protein</a>
+
+                    
+                </div>
+
+
+                <a class="title" href="#" onclick="toggleSubmenu('nutrizioneSub')">Gestione del peso vegana</a>
+                <div class="submenu" id="nutrizioneSub">
+                    <a class="title" href="#">Definisci il tuo obbiettivo</a>
+
+                    <a class="title" href="#">Perdita di peso</a>
+
+                    <a class="title" href="#">Aumento del peso</a>
+                    
+
+                    
+                </div>
+
+                <!-- Puoi aggiungere altre sezioni e sottocategorie così -->
+                </div>
+                
+                
+                </div>   
+
+
+                
+
+
+
+
+
+
                 <div class="search-block">
                     <svg class ="search" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M22.4404 20.56L18.0604 16.18C18.0604 16.18 17.6304 16.68 17.3904 16.92C17.1504 17.16 16.6204 17.61 16.6204 17.61L21.0104 22L22.4504 20.56H22.4404ZM10.5604 4.03C7.20043 4.03 4.47043 6.76 4.47043 10.12C4.47043 13.48 7.20043 16.21 10.5604 16.21C13.9204 16.21 16.6504 13.49 16.6504 10.12C16.6504 6.75 13.9304 4.03 10.5604 4.03ZM10.5604 2C15.0404 2 18.6804 5.64 18.6804 10.12C18.6804 14.6 15.0404 18.24 10.5604 18.24C6.08043 18.24 2.44043 14.6 2.44043 10.12C2.44043 5.64 6.07043 2 10.5604 2Z" fill="currentColor"></path>
@@ -66,14 +177,25 @@
 
         <!-- Navbar con categorie prodotti -->
         <nav class="navbar">
-            <a href="#">Proteine</a>
-            <a href="#">Nutrizione</a>
-            <a href="#">Activewear</a>
-            <a href="#">Snack & Drink</a>
-            <a href="#">Alimentazione Vegana</a>
-            <a href="#">Performance</a>
-            <a href="#">Perdita di Peso</a>
+            <div class="nav-menu">
+                <a href="#">Proteine</a>
+                <a href="#">Nutrizione</a>
+                <a href="#">Activewear</a>
+                <a href="#">Snack & Drink</a>
+                <a href="#">Alimentazione Vegana</a>
+                <a href="#">Performance</a>
+                <a href="#">Gestione del Peso</a> 
+            </div>   
         </nav> 
+
+        
+        <!-- Dropdown dinamico -->
+        <div id="dropdown-menu">
+            <div id="dropdown-content"></div>
+        </div>
+
+
+
     </header>
     
     <div class="image-conteiner">
